@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář</title>
+    <link rel="stylesheet" href="./style/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Formulář</h2>
+        <form action="submit_form.php" method="post">
+
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" name="name">
+
+            
+            <label>Pohlaví:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Muž</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Žena</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Jiné</label>
+            </div>
+
+          
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Odebírat novinky</label>
+
+           
+            <label for="comments">Komentáře:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+           
+            <input type="submit" value="Odeslat">
+        </form>
+    </div>
+</body>
+</html>

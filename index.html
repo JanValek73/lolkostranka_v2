@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/png" href="./obrazky/drx.png">
+    <link rel="stylesheet" href="./style/styl.css">
 </head>
 
 <body>
@@ -79,6 +80,48 @@
     <footer class="text-center-footer">
         <p>2023 | Jan Válek</p>
     </footer>
+    <script>
+
+        function debounce(func, wait = 20, immediate = true) {
+            var timeout;
+            return function () {
+                var context = this, args = arguments;
+                var later = function () {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        const sliderImages = document.querySelectorAll('.item');
+
+        function checkSlide() {
+            
+            sliderImages.forEach(sliderImage => {
+                console.log("height",sliderImage.offsetTop);
+                // half way through the image
+                const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.offsetHeight / 2;
+                // bottom of the image
+                const imageBottom = sliderImage.offsetTop + sliderImage.offsetHeight;
+                const isHalfShown = slideInAt > sliderImage.offsetTop;
+                const isNotScrolledPast = window.scrollY < imageBottom;
+                if (isHalfShown && isNotScrolledPast) {
+                    sliderImage.classList.add('active');
+                } else {
+                    sliderImage.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', debounce(checkSlide));
+
+
+    </script>
+
 </body>
 
 </html>

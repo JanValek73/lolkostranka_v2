@@ -1,5 +1,5 @@
 body {
-      background-color: #1e1e1e;
+      background-color: 	#12264d;
       color: #ffffff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -11,7 +11,7 @@ body {
   }
   
   .container {
-      background-color: #2e2e2e;
+      background-color: #18336c;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -33,7 +33,7 @@ body {
   }
   
   input[type="text"], textarea {
-      background-color: #3e3e3e;
+      background-color: #2c77d8 ;
       border: 1px solid #555;
       border-radius: 5px;
       padding: 10px;
@@ -50,7 +50,7 @@ body {
   }
   
   input[type="submit"] {
-      background-color: #4caf50;
+      background-color: #3d5893;
       border: none;
       border-radius: 5px;
       color: white;

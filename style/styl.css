@@ -22,12 +22,12 @@
         }
 
         .bg-light {
-            background: #08083d;
+            background: #32482C;
             color: #333;
         }
 
         .bg-dark {
-            background: #08083d;
+            background: #1f2d1c;
             color: #08083d;
         }
 
@@ -66,14 +66,13 @@
             margin: 0.75rem 0;
         }
 
-        /* Showcase */
+      
         #showcase {
             height: 100vh;
             color: #fff;
         }
 
-        /* Photo by <a href="https://unsplash.com/@itfeelslikefilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">🇸🇮 Janko Ferlič</a> on <a href="https://unsplash.com/s/photos/library?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-
+       
         #showcase .showcase-content {
             display: flex;
             flex-direction: column;
@@ -85,7 +84,7 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        /* Section Co děláme  */
+      
         #what .items {
             display: flex;
             padding: 1rem;
@@ -94,10 +93,9 @@
         #what .item {
             text-align: center;
             padding: 1rem;
-            border-radius: 10px;
-            background-color: #08083d;
-            margin: 10px;
-
+            border-radius: 150px;
+            background-color: #788b73;
+            margin: 20px;
             opacity: 0;
             transition: all 1s;
             transform: translateY(30%) scale(0.95);
@@ -110,7 +108,7 @@
 
         #what .items .item i {
             background: white;
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 50%;
-            margin-bottom: 1rem;
+            margin-bottom: -3rem;
         }
